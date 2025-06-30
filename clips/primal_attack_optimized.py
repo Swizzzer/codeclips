@@ -4,6 +4,14 @@ from sage.all import matrix, block_matrix, Zmod, ZZ, diagonal_matrix, vector, GF
 
 
 def primal_attack(A, b, m, n, p, esz):
+    """
+    an attack towards LWE problems
+
+    Input:
+        A: coefficients matrix
+        s: secret vector
+        e: errors vector
+    """
     L = block_matrix(
         [
             [matrix(Zmod(p), A).T.echelon_form().change_ring(ZZ), 0],
