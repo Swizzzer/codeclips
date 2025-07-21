@@ -1,5 +1,5 @@
 // 爆破8字节消息的SHA-1
-// 大部分Objc写法抄的@OV3师傅
+// 大部分Obj-C写法抄的@OV3师傅
 package main
 
 /*
